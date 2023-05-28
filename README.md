@@ -3,15 +3,17 @@
 <br>
 
 ## 基本構成
-| 分類| 採用言語/アプリ| version| 備考|
-| :-------------- | :-------------- |
-| :-------------- | :-------------- |
-| DB|sqlite3|0.4.4|PostgreSQLに変更予定
-|
-| BE|Python(Django)|3.7.3(3.2.19)|構築済み
-|
+| Class  |  Langage/App     |  Version        |  notes              |
+| :----  | :----            | :----           | :----               |
+|  DB    |  sqlite3         |  0.4.4          |  Future:PostgreSQL  |
+|  BE    |  Python(Django)  |  3.7.3(3.2.19)  |  Structured         |
 <br>
-## 
+
+## 初期構築
+1. Pythonをインストール
+1. CUI上から任意のフォルダのカレントディレクトリで'python -m venv env'を実行
+1. 
+<br>
 
 ##
 
