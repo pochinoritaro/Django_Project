@@ -1,0 +1,7 @@
+.vscode/
+.git/
+env/
+docs/
+*.gitignore
+*.sqlite3
+*.code-workspace

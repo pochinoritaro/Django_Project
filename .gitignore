@@ -1,0 +1,6 @@
+.vscode/
+.git/
+docs/
+env/
+*.sqlite3
+*.code-workspace
