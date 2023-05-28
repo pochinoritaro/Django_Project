@@ -1,0 +1,6 @@
+.sqlite3
+env/
+docs/
+.gitignore
+.vscode/
+.code-workspace

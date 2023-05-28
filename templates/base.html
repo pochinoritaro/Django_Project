@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='slim' %}
+{% load static %}
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type='text/css' href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cccabinet.jpn.org/bootstrap4/css/style.css">
+    <title> Django開発サンプル </title>
+
+    {% block extra_css %}{% endblock %}
+
+</head>
+
+  <body>
+    <!-- ↓↓１番上のナビゲーションバー↓↓ -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark bs-navbar" style='background-color:cadetblue;' id="bs-navbar">
+            <a class="navbar-brand mr-md-2" href="/app_folder/top_page">
+              サンプル開発画面
+            </a>
+              <!-- ↓↓レイアウトを調整する為のダミー↓↓ -->
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">   </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">   </a></li>
+              </ul>
+              <!-- ↑↑ダミーここまで↑↑ -->                            
+
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/#" >サンプル１</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#" >サンプル２</a></li>
+                <li class="nav-item"><a class="nav-link" href="/#" >サンプル３</a></li>
+                <li class="nav-item"><a class="nav-link" href="/accounts/login" >ログイン</a></li>
+                <li class="nav-item"><a class="nav-link" href="/accounts/logout" >ログアウト</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 「サイドバー」と「コンテンツ本体部分」 -->
+    <div id="content" class="container-fluid">
+      <div class="row flex-xl-nowrap">
+
+        <!-- ↓↓サイドバー↓↓ -->
+        <div id="sidemenu" class="col-2 d-none d-md-block bg-light sidebar align-self-start">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="/#">
+                    <span data-feather=""></span>Topページ 
+                  </a>
+                </nav>
+              </li>
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class='navbar-brand' href='/#'>
+                    <span data-feather=""></span>サイドバー１
+                  </a>
+                </nav>
+              </li>
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class='navbar-brand' href='/#'>
+                    <span data-feather=""></span>サイドバー２
+                  </a>
+                </nav>
+              </li>         
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class='navbar-brand' href='/#'>
+                    <span data-feather=""></span>サイドバー３
+                  </a>
+                </nav>
+              </li>         
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class='navbar-brand' href='/#'>
+                    <span data-feather=""></span>サイドバー４
+                  </a>
+                </nav>
+              </li>         
+              <li class="nav-item">
+                <nav class="navbar navbar-light bg-light">
+                  <a class='navbar-brand' href='/#'>
+                    <span data-feather=""></span>サイドバー５
+                  </a>
+                </nav>
+              </li>         
+            </ul>
+          </div>
+        </div id="sidemenu">
+        <!-- ↑↑サイドバーここまで↑↑ -->
+
+        <!-- ↓↓コンテンツ本体↓↓ -->
+        <div class="col-10">
+          {% block contents %}
+          {% endblock %}
+        </div>
+        <!-- ↑↑コンテンツ本体ここまで↑↑ -->
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+<!-- サイドバーに使用しているアイコン -->
+<!-- 使用できるアイコンの一覧： https://voyager-jp.com/blog/javascript/feather/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+<script>feather.replace()</script>
