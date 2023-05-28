@@ -1,9 +1,0 @@
-【Gitのリモートブランチがローカルでゾンビ化した場合の対処法】
-https://qiita.com/hy3/items/96267f9cce825e685baf
-状況:vscode上で死んだリモリポが生きてた
-
-【.gitignore が反映されないときの対象砲】
-git rm -r --cached .
-git status
-git commit -m "deleted cache"
-git push
