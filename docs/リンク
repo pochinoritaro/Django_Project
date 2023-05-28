@@ -1,9 +1,0 @@
-最後に、startproject 実行時に作成された login_project フォルダの中で下記のコマンドを実行してマイグレーションを行います（models.py を変更していないため、今回は makemigrations は不要です）。
-
-PythonのBottleとBootstrapでInstagramみたいなのを作る（第一弾）
-https://qiita.com/yuno_miyako/items/17057805f54b6af88406
-
-Django(Python)でシステム開発できるようになる記事_入門編
-https://qiita.com/Saku731/items/ed64190a12a4498b9446
-
-https://daeudaeu.com/django-login/
